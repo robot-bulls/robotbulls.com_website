@@ -1,0 +1,386 @@
+/*          PAGE EVENEMENT EVENT.HTML ET EVENT_PAST.HTML            */
+
+/* CSS ED page event */
+.event-bg{
+    background-image: url('images/events.html');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* list event */
+.inform{
+  margin-bottom: 50px;
+}
+.info span{
+  margin-left: 5px; 
+}
+.event-list > li {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 5px 18px rgba(34, 59, 85, 0.2);
+/*  padding: 0 0 25px;*/
+  margin: 0 0 50px;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.event-list > li > time {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  background-color: #1940b0 ;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 40px !important;
+  border-radius: 0.25em 0.25em 0 0 ;
+}
+.event-list > li > time > span {
+  display: none;
+}
+.event-list > li > time > .day {
+  display: block;
+  font-size: 42pt;
+  font-weight: 100;
+  line-height: 1;
+}
+.event-list > li > time > .month {
+  display: block;
+  font-size: 34pt;
+  font-weight: 900;
+  line-height: 1;
+}
+.event-list > li > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.25em 0.25em 0 0;
+}
+.event-list > li > .info {
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 0.25em 0.25em;
+  position: relative;
+}
+.event-list > li > .info > .title {
+  font-size: 17pt;
+  font-weight: 700;
+  margin: 20px 0 0;
+}
+.event-list > li > .info > .desc {
+  margin: 0 10px 10px;
+}
+/*
+.event-list > li > .info > ul, .event-list > li > .price > ul {
+  display: table;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  width: 100%;
+}
+.event-list > li > .price > ul {
+  margin: 0;
+}
+.event-list > li > .price > ul > li {
+  padding: 0;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+}
+.event-list > li > .info > ul > li {
+  display: block;
+  color: #415076;
+  font-size: 11pt;
+  font-weight: 300;
+  padding: 0;
+  line-height: 0.5;
+  text-align: left;
+  margin: 0 10px;
+}
+*/
+
+.event-list > li > .info > .event-link a {
+  text-decoration: underline;
+}
+.event-list > li > .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100px;
+  background: #16a1ff;
+  border-radius: 0 0.25em 0 0.25em;
+}
+@media (min-width: 992px) {
+  .event-list > li > .info > .desc {
+    margin: 0 0 10px;
+  }
+  .event-desc{
+    padding-right: 10%;
+  }
+  .event-list > li {
+/*
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+    border-radius:0 0.25em 0.25em 0;
+*/
+      flex-direction: row;
+  }
+  .event-list > li > time, .event-list > li > img {
+    display: inline-block;
+    width: 250px;
+    max-width: 250px;
+/*    height: 250px;*/
+    float: left;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.25em 0 0 0.25em;
+    flex-grow: 1;
+  }
+  .event-list > li > time > .day {
+    font-size: 75pt;
+  }
+  .event-list > li > .info {
+    background-color: #fff;
+    overflow: hidden;
+/*    height: 250px;*/
+    text-align: left;
+    padding: 40px;
+  }
+/*
+  .event-list > li > .info > ul > li {
+    display: table-cell;
+  }
+*/
+  .event-list > li > .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100px;
+    background: #16a1ff;
+    border-radius: 0 0.25em 0 0.25em;
+  }
+/*
+  .event-list > li > .price > ul > li {
+    display: block;
+    padding: 0;
+  }
+*/
+}
+
+  /* CSS ED timeline events_past */
+
+  .timeline .timeline-item .card {
+    max-height: 300px;
+  }
+  .timeline .event-list {
+    list-style: none;
+    margin: 80px 0 0 0;
+    padding: 0;
+  }
+  .timeline .timeline-item {
+      display: flex;
+      position: relative;
+  }
+  
+  .timeline .timeline-item::before {
+      background: #c1cef1;
+      content: "";
+      height: 100%;
+      left: 38px;
+      position: absolute;
+      top: 20px;
+      width: 2px;
+      z-index: -1;
+  }
+  
+  .timeline .timeline-item .timeline-icon {
+    border-radius: 50%;
+    color: #fff;
+    background: #3221ad;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 15px;
+}
+  .timeline .timeline-item .timeline-content {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 0 0 0 1rem;
+  }
+  .timeline .event-list > li > .info > .title {
+    margin: 0 0 20px;
+  }
+/*
+  .timeline .event-list > li > .info > ul {
+  margin: 10px 0 20px;
+  }
+*/
+/*
+  .timeline .event-link{
+    text-align: left;
+    padding-left: 10px;
+}
+*/
+@media (max-width: 992px) {
+  .timeline .timeline-item .timeline-icon {
+    line-height: 35px;
+    margin-left: 15px;
+    padding: 8px;
+}
+.timeline .timeline-item .timeline-content {
+  padding: 0;
+}
+.event-list > li > .info {
+  padding: 10px 5px;
+}
+.timeline .event-list > li > .info > .title {
+    margin: 20px 0 20px 0;
+  }
+/*
+.event-list > li > .info > ul > li {
+  line-height: 1.2;
+}
+*/
+}
+/*          PAGE EVENEMENT DETAILS            */
+  
+  /* CSS ED page event1 Mercure Geneve dec 22*/
+  .event1-bg{
+    /* violet origin #9907facc */
+    background: linear-gradient(to top,#16a2ff45, #193fb0bf), url('../../../images/events/1/1.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+  /* CSS ED page event2 Lucid*/
+  .event2-bg{
+    background: linear-gradient(to top,#16a2ff45, #193fb0bf), url('../../../images/events/2/img1.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  .event-bg-ecobots{
+    background: linear-gradient(to top,#16a2ff45, #193fb0bf), url('../../../images/events/ecobots-opening/robotbulls-ecobots-opening.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+.event-bg-art-gallery{
+    background: linear-gradient(to top,#16a2ff45, #193fb0bf), url('../../../images/events/art-gallery/robotbulls-art-gallery3.webp') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  /* page event global - bloc 1 */
+  .timeline{
+      margin-left: -25px;
+    }
+  .event-title-H1{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 4rem;
+    padding-right: 55%;
+    padding-top: 5%;
+  }
+  .event-about H2, #event-gallery H2{
+    color:   #1940b0;
+  }
+  .event-icon{
+    font-size: 20px;
+    color: #16a1ff;
+    margin-right: 5px;
+  }
+  .event-desc{
+    color: #fff;
+    font-size: 1.3rem !important;
+    font-weight: 300;
+    line-height: 1.7;
+    padding-right: 55%;
+  }
+  .event-info{
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+  }
+  .event-info ul{
+    padding-left: 0;
+  }
+    /* page event global - bloc 2 */
+    #team-featured{
+      padding-top: 5%;
+      padding-bottom: 1%;
+    }
+    .event-about{
+    padding: 5%;
+  }
+  .event-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0;
+    box-shadow: 20px 20px 0px 0px #1940b0;
+  }
+  .event-bold{
+    font-weight: 600;  
+  }
+    
+  /* page event global - bloc 3 */
+  /*
+  #event-gallery .title-s4 {
+    color: #1940b0 !important;
+  }
+  */  
+  .gallery-item {
+    margin-bottom: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .gallery {
+      column-count: 3;
+      column-gap: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .gallery {
+      column-count: 2;
+      column-gap: 15px;
+    }
+  }
+
+  /* CSS ED mediaqueries */
+  @media (max-width: 991px) {
+    .event-title-H1{
+      font-size: 4rem;
+      line-height: 3.5rem;
+      padding-right: 5%;
+      padding-top: 25%;
+    }
+    .event-desc {
+    padding-right: 5%;
+    }
+    #event-gallery .title-s4 {
+      font-size: 2rem;
+    }
+    .event-about-image {
+      padding: 0 10% 0 5%;
+    }
+    .event-about{
+      padding: 15% 0 0 0;
+    }
+    #team-featured {
+      padding-top: 15%;
+  }
+  }
