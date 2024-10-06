@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="it">
+
+
+<!-- Mirrored from www.robotbulls.com:443/it/guida-per-impostare-lo-stop-loss-automatico-nel-trading/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Oct 2024 03:14:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Guida per impostare lo stop-loss automatico nel trading | RobotBulls</title>
+    <meta property="og:title" content="Guida per impostare lo stop-loss automatico nel trading">
+    <meta property="og:description" content="Guida per impostare lo stop-loss automatico nel trading
+
+Il stop-loss automatico è uno strumento fondamentale per chiunque si avventuri nel mondo del trading, in quanto permette">
+    <meta property="og:url" class="rb-link" content="index.html">
+    <meta name="description" content="Guida per impostare lo stop-loss automatico nel trading
+
+Il stop-loss automatico è uno strumento fondamentale per chiunque si avventuri nel mondo del trading, in quanto permette">
+    <link rel="canonical" class="rb-link" href="index.html" />
+    
+        
+    
+    
+
+
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Robin Krambroöckers">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--<meta charset="UTF-8">-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RobotBulls">
+    <meta property="og:image" content="/images/apple-touch-icon.png">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">-->
+    <link rel="icon" href="/images/favicon.png" sizes="32x32">
+    <link rel="icon" href="/images/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="/images/favicon.png">
+
+    <!-- Preload Fonts   -->
+    <link rel="preload" href="/assets/fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/themify.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Bundle and Base CSS -->
+    <link rel="stylesheet" href="/assets/css/style-chart.css" id="changeTheme">
+    <link rel="stylesheet" href="/assets/css/vendor.bundlef86e.css?ver=192">
+
+    <link rel="stylesheet" href="/assets/css/style-jasmine3f86e.css?ver=192" id="changeTheme">
+    <!--        <link rel="stylesheet" href="assets/css/style.css?ver=192" id="changeTheme">-->
+    <!-- Extra CSS -->
+<!--    <link rel="stylesheet" href="assets/css/rtl.css?ver=192">-->
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+    
+    <meta name="google-site-verification" content="d-FccEYX8ZwnKEDTW8qa1eC_pQSkH6gx5fo1jZX2bMs" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2R911DF9NH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2R911DF9NH');
+</script>
+
+<script src="/assets/js/jquery.js"></script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "744gohv0op");
+</script>
+</head>
+
+<body class="nk-body body-wider bg-light no-touch nk-nio-theme page-loaded chrome">
+
+<div class="nk-wrap">
+    
+    <header class="nk-header page-header is-transparent is-sticky is-shrink" id="header">
+        <!-- Header @s -->
+        <div class="header-main black020">
+    <div class="header-container container">
+        <div class="header-wrap">
+            <!-- Logo @s -->
+            <div class="header-logo logo">
+                <a href="/it/" class="logo-link">
+
+                    <picture class="logo-dark">
+                        <source srcset="/images/logo.webp" type="image/webp">
+                        <source srcset="/images/logo.png" type="image/jpeg">
+                        <img src="/images/logo.png" alt="Robot Bulls">
+                    </picture>
+                    <picture class="logo-light">
+                        <source srcset="/images/logo-full-white.webp" type="image/webp">
+                        <source srcset="/images/logo-full-white.png" type="image/jpeg">
+                        <img src="/images/logo-full-white.png" alt="Robot Bulls">
+                    </picture>
+                </a>
+            </div>
+
+            <!-- Menu Toogle @s -->
+            <div class="header-nav-toggle">
+                <a href="#" class="navbar-toggle" data-menu-toggle="example-menu-02">
+                    <div class="toggle-line">
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Menu @s -->
+            <div class="header-navbar">
+                <nav class="header-menu" id="example-menu-02">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="menu-link nav-link" href="/it/">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link nav-link" href="/it/robots/">I nostri robot</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link nav-link" href="/it/coin/">Coin</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link nav-link" href="/it/career/">Carriera</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link nav-link" href="/it/events/">Eventi</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link nav-link" href="/it/articles/">Blog</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="menu-btns">
+                        <li><a class="rb-link" href="https://app.robotbulls.eth.limo/register?lang=it" class=" btn btn-md btn-auto btn-primary"><span>Inizia qui</span></a></li>
+                    </ul>
+                </nav>
+            </div><!-- .header-navbar @e -->
+        </div>
+    </div>
+</div><!-- .header-main @e -->
+
+        <div class="header-banner bg-theme-grad has-ovm">
+            <div class="nk-banner">
+                <img src="/assets/blog/blogs/1405/0.jpg" style="height: 100%;position: absolute;width: 100%;object-fit: cover;" alt="Guida per impostare lo stop-loss automatico nel trading">
+                <div class="banner banner-page">
+                    <div class="banner-wrap">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-6 col-lg-9">
+                                    <div class="banner-caption cpn tc-light text-center">
+                                        <div class="cpn-head">
+<!--                                            <h2 class="title ttu">Democratizing Data Science: How Citizen Data Scientists are Transforming the Tech and Finance Industries in 2023</h2>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="nk-ovm shape-a-sm"></div>
+        </div><!-- .header-banner @e -->
+    </header>
+    <main class="nk-pages">
+        <section class="section bg-white pt-5">
+            <div class="container">
+                <div class="nk-block nk-block-blog">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="blog-details">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-8 col-lg-10">
+                                                                                <div class="blog-content">
+                                            <h1>Guida per impostare lo stop-loss automatico nel trading</h1>
+
+<p>Il <strong>stop-loss automatico</strong> è uno strumento fondamentale per chiunque si avventuri nel mondo del trading, in quanto permette di limitare le perdite e proteggere il proprio capitale. In questo articolo, esploreremo i principali aspetti da considerare per impostare un ordine di <a href="/stop-loss/index.html">stop loss</a> efficace e adatto alle proprie esigenze.</p>
+
+<h2>Definizione di stop-loss</h2>
+
+<p>Lo stop-loss è un tipo di ordine che permette di vendere automaticamente un'attività finanziaria, come azioni, CFD o valute, quando il suo valore raggiunge un livello predefinito. L'obiettivo principale dello stop-loss è quello di ridurre al minimo le perdite potenziali sulle posizioni aperte, garantendo così una maggiore sicurezza al trader.</p>
+
+<h3>Stop-loss fisso e dinamico</h3>
+
+<p>Esistono due tipologie principali di stop-loss: fisso e dinamico.</p>
+
+<p><strong>Lo stop-loss fisso</strong> viene impostato a un valore specifico rispetto al prezzo d'ingresso. Ad esempio, se si apre una posizione long a 100 euro e si imposta uno stop-loss fisso a 95 euro, la posizione verrà chiusa automaticamente quando il prezzo scenderà a 95 euro, limitando così la perdita a 5 euro.</p>
+
+<p><strong>Lo stop-loss dinamico</strong>, invece, varia in base all'andamento del mercato. In pratica, viene impostato a una certa distanza percentuale dal valore corrente dell'attività finanziaria e si aggiorna automaticamente man mano che il prezzo aumenta o diminuisce. Questo tipo di stop-loss permette di mantenere un certo margine di sicurezza, pur consentendo al trader di beneficiare delle variazioni di prezzo favorevoli.</p>
+
+<h2>Come calcolare lo stop-loss ideale</h2>
+
+<p>Per impostare uno stop-loss efficace, è necessario valutare attentamente alcuni elementi chiave:</p>
+
+<ol>
+ <li><strong>La volatilità del mercato:</strong> In generale, maggiore è la volatilità di un'attività finanziaria, più ampio dovrebbe essere lo stop-loss per evitare di chiudere prematuramente le posizioni a causa di fluttuazioni temporanee dei prezzi. Per calcolare la volatilità, si possono utilizzare indicatori come l'Average True Range (ATR) o analizzare l'ampiezza delle oscillazioni storiche dei prezzi.</li>
+ <li><strong>Il capitale a disposizione:</strong> Il livello dello stop-loss dovrebbe tenere conto della quantità di denaro che si è disposti a rischiare in ogni operazione. È consigliabile non rischiare più di una percentuale fissa del proprio capitale per singola operazione, ad esempio il 2%.</li>
+ <li><strong>La strategia di trading:</strong> A seconda della propria strategia, si potrebbe desiderare di impostare uno stop-loss più o meno stretto. Ad esempio, se si adotta una strategia di trading a breve termine, come lo scalping, uno stop-loss più stretto potrebbe essere opportuno per limitare le perdite su singole operazioni. Al contrario, per strategie di medio-lungo termine, come il trend following, potrebbe essere preferibile utilizzare uno stop-loss più ampio, che consenta di mantenere aperte le posizioni durante correzioni temporanee del mercato.</li>
+</ol>
+
+<h2>Errore comune nello stop-loss: l'effetto "trappola"</h2>
+
+<p>Un errore comune tra i trader meno esperti è quello di impostare uno stop-loss eccessivamente stretto, nella speranza di minimizzare le perdite. Tuttavia, questo può portare all'effetto "trappola", ovvero la chiusura prematura e ripetuta delle posizioni a causa di piccole oscillazioni dei prezzi, con conseguente accumulo di perdite non previste. Per evitare questo problema, è fondamentale analizzare la volatilità del mercato e valutare attentamente il livello adeguato dello stop-loss in base alle proprie esigenze e alla strategia di trading adottata.</p>
+
+<h3>Suggerimenti per evitare l'effetto "trappola"</h3>
+
+<ul>
+ <li><strong>Impostare lo stop-loss al di fuori delle zone di supporto e resistenza:</strong> Queste aree sono spesso caratterizzate da un'elevata attività di compravendita e possono causare fluttuazioni dei prezzi che portano a falsi segnali di uscita. Impostando lo stop-loss al di fuori di queste zone, si riduce il rischio di chiusure premature.</li>
+ <li><strong>Valutare la volatilità del mercato:</strong> Come accennato in precedenza, impostare uno stop-loss adeguato alla volatilità dell'attività finanziaria può aiutare a evitare l'effetto "trappola". Utilizzare indicatori come l'ATR o analizzare le oscillazioni storiche dei prezzi per determinare un livello appropriato di stop-loss.</li>
+ <li><strong>Impostare lo stop-loss in base alla propria strategia di trading:</strong> Adattare lo stop-loss alla propria strategia è fondamentale per evitare chiusure premature e massimizzare i profitti. Valutare attentamente se utilizzare uno stop-loss fisso o dinamico e quale distanza mantenere dal prezzo corrente in base agli obiettivi e all'orizzonte temporale della propria operatività.</li>
+</ul>
+
+<h2>Conclusioni</h2>
+
+<p>In conclusione, lo stop-loss automatico rappresenta uno strumento indispensabile per la gestione del rischio nel trading. Impostare un ordine di stop-loss adeguato alle proprie esigenze e alla strategia adottata permette di limitare le perdite potenziali e proteggere il proprio capitale. Per ottenere risultati ottimali, è fondamentale considerare fattori quali la volatilità del mercato, il capitale a disposizione e la strategia di trading, oltre a prestare attenzione all'effetto "trappola" e adottare misure preventive per evitarlo.</p>                                            <a href="/it/sitemap/">Sitemap</a>
+                                        </div>
+                                        <ul class="blog-tags">
+
+                                        </ul>
+                                        
+                                        <ul class="blog-meta pt-5">
+                                            <li><a id="blog-date">06.10.2024</a></li>
+                                        </ul>
+                                        
+                                        <div class="blog-share pdt-l">
+                                            <h4>Don't forget to share the article!</h4>
+
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=robotbulls.com/it/guida-per-impostare-lo-stop-loss-automatico-nel-trading" target="_blank" style="color: #3b5998; font-size: 24px; padding: 10px;"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://twitter.com/intent/tweet?url=robotbulls.com/it/guida-per-impostare-lo-stop-loss-automatico-nel-trading" target="_blank" style="color: #1da1f2; font-size: 24px; padding: 10px;"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://www.linkedin.com/shareArticle?url=robotbulls.com/it/guida-per-impostare-lo-stop-loss-automatico-nel-trading" target="_blank" style="color: #0077b5; font-size: 24px; padding: 10px;"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://pinterest.com/pin/create/button/?url=robotbulls.com/it/guida-per-impostare-lo-stop-loss-automatico-nel-trading" target="_blank" style="color: #bd081c; font-size: 24px; padding: 10px;"><i class="fab fa-pinterest-p"></i></a>
+                                            <a href="mailto:?subject=I wanted you to see this article&body=Check out this article: robotbulls.com/it/guida-per-impostare-lo-stop-loss-automatico-nel-trading" target="_blank" style="font-size: 24px; padding: 10px;"><i class="fas fa-envelope"></i></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                                                
+                                
+
+
+
+
+                            </div>
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .nk-block -->
+            </div><!-- .container -->
+            
+            
+                
+                    <div class="row justify-content-center pdt-l">
+                    <!-- <div class="col-xl-8 col-lg-10 row"> -->
+                    <div class="col-12 row">
+                                        </div>
+                    </div>
+
+
+            
+            
+        </section><!-- .section -->
+    </main>
+
+    <footer class="nk-footer bg-theme-grad ov-h overlay-x">
+
+            <section class="section tc-light tc-light-alt bg-transparent">
+                <div class="container">
+                    <!-- Block @s -->
+                    <div class="nk-block nk-block-footer">
+                        <div class="row justify-content-between text-center text-sm-left">
+                            <div class="col-lg-3 col-md-4 col-sm-5">
+                                <div class="wgs wgs-menu">
+                                    <h6 class="wgs-title wgs-title-s2 text-white footer_address">Note Legali</h6>
+                                    <div class="wgs-body">
+                                        <ul class="wgs-list wgs-list-s2">
+                                            <li><a class="footer_privacy rb-link" href="https://app.robotbulls.eth.limo/privacy-policy"><p>Politiche della Privacy</p></a></li>
+                                            <li><a class="footer_terms rb-link" href="https://app.robotbulls.eth.limo/terms-of-service"><p>Termini e Condizioni</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+<!--
+                            <div class="col-lg-2 col-md-4 col-sm-3">
+                                <div class="wgs wgs-menu">
+                                    <h6 class="wgs-title wgs-title-s2 text-white footer_resources">Compagnia</h6>
+                                    <div class="wgs-body">
+                                        <ul class="wgs-links wgs-links-s2">
+                                            <li><a class="menu_faq" href="/robotbulls-whitepaper.pdf"><p>Libro Bianco</p></a></li>
+                                            <li><a class="menu_faq" href="/it/faq/"><p>FAQ</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+-->
+                            <div class="col-lg-2 col-md-4 col-sm-3">
+                                <div class="wgs wgs-menu">
+                                    <h6 class="wgs-title wgs-title-s2 text-white footer_company">Lingue</h6>
+                                    <div class="wgs-body">
+                                        <ul class="wgs-links wgs-links-s2">
+                                            <li><span data-link="L2xhbmd1YWdlcy8=" class="menu_home obflink" style="cursor:pointer"><p>Italiano</p></span></li>
+                                            <li><span data-link="L2xhbmd1YWdlcy8=" class="menu_home obflink" style="cursor:pointer"><p>Più Lingue</p></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-lg-4 col-md-8 offset-lg-1">
+                                <div class="wgs wgs-text">
+                                    <span class="wgs-logo obflink" data-link="" style="cursor:pointer">
+                                        <picture>
+                                            <source srcset="/images/logo-white.webp" type="image/webp" width="100">
+                                            <source srcset="/images/logo-white.png" type="image/jpeg" width="100">
+                                            <img src="/images/logo-white.png" srcset="images/logo-white2x.png 2x" alt="Robot Bulls logo" width="100">
+                                        </picture>
+                                    </span>
+                                    <div class="wgs-body">
+                                        <div class="wgs-subscribe wgs-subscribe-s2">
+                                            <p>In God we trust. Everyone else, bring data.</p>
+                                            <ul class="social">
+                                                <li><a target="_blank" href="https://www.tiktok.com/@robotbulls.com"><em class="fab social-icon"><img style="filter: invert(1); transform: scale(.4) translateY(-5px);" class="fab" src="/assets/images/tiktok-brands.svg"></em></a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/company/robot-bulls"><em class="social-icon fab fa-linkedin"></em></a></li>
+                                                <li><a target="_blank" href="https://www.x.com/robotbulls/"><em class="social-icon fab fa-twitter"></em></a></li>
+                                                <li><a target="_blank" href="https://www.github.com/robot-bulls/"><em class="social-icon fab fa-github"></em></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <div class="footer-bottom pdt-r">
+                            <div class="copyright-text copyright-text-s3 text-center">
+                                <p><span style="color: #a9a9a9; font-size: 14px;"><span>Copyright © <script>
+                                            document.write(new Date().getFullYear());
+
+                                        </script> </span><span class="footer_copyright">RobotBulls. Tutti i Diritti Riservati</span></span></p>
+                            </div>
+                        </div>
+                    </div><!-- .block @e -->
+                </div>
+            </section>
+
+        </footer>
+
+
+
+<script>
+    document.querySelectorAll('.obflink').forEach(function(element) {
+        element.addEventListener('click', function() {
+            console.log("test");
+            var encodedUrl = this.getAttribute('data-link');
+            var decodedUrl = atob(encodedUrl);
+            var baseUrl = "/it";
+            window.location.href = "https://" + window.location.hostname + baseUrl + decodedUrl;
+        });
+    });
+    document.querySelectorAll('.obflink2').forEach(function(element) {
+        element.addEventListener('click', function() {
+            console.log("test");
+            var encodedUrl = this.getAttribute('data-link');
+            var decodedUrl = atob(encodedUrl);
+            var baseUrl = "/it";
+            window.location.href =  baseUrl + decodedUrl;
+        });
+    });
+</script>
+
+
+<!--
+<script>
+
+
+document.querySelectorAll('.rb-link').forEach(link => {
+    let url = new URL(link.href);
+    let parts = url.hostname.split('.'); // split the hostname into parts
+    let currentDomain = window.location.hostname;
+
+    // If the current domain contains 'www', remove it.
+    if (currentDomain.startsWith('www.') && url.toString().includes('app.') && parts[0] !== 'www') {
+        currentDomain = currentDomain.substring(4);
+    }
+
+    if(url.toString().includes('app.') && parts[0] !== 'www') {
+        url.hostname = parts[0]+"."+currentDomain; // if a subdomain exists (and it's not 'www'), prepend it to the current domain
+    } else {
+        url.hostname = currentDomain; // if no valid subdomain exists, just use the current domain
+    }
+
+    link.href = url.href;
+});
+
+
+
+</script>
+-->
+</div>
+
+<div class="preloader" style="display: none;"><span class="spinner spinner-round load-done" style="display: none;"></span></div>
+
+<!-- JavaScript -->
+<script src="/assets/js/jquery.bundlef86e.js?ver=192"></script>
+<script src="/assets/js/scriptsf86e.js?ver=192"></script>
+<script src="/assets/js/charts0c67.js?var=161"></script>
+    
+<script>
+    // Define the class you want to add
+var className = "h4";
+
+// Get all h1, h2 and h3 elements
+var headings = document.querySelectorAll('h1, h2, h3');
+
+// Loop through all headings
+for (var i = 0; i < headings.length; i++) {
+    // Add the class to each heading
+    headings[i].classList.add(className);
+}
+
+</script>
+
+</body>
+
+<!-- Mirrored from www.robotbulls.com:443/it/guida-per-impostare-lo-stop-loss-automatico-nel-trading/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Oct 2024 03:14:52 GMT -->
+</html>
